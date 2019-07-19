@@ -1,0 +1,14 @@
+2019-01-07 16:08:42.665  INFO 3556 --- [main] com.hcl.msa.MSAAnalyser                  : Starting MSAAnalyser on user1-PC with PID 3556 (Y:\Desktop\MSA\MSAAnalyser\target\classes started by user1 in Y:\Desktop\MSA\MSAAnalyser)
+2019-01-07 16:08:42.724 DEBUG 3556 --- [main] com.hcl.msa.MSAAnalyser                  : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-07 16:08:42.727  INFO 3556 --- [main] com.hcl.msa.MSAAnalyser                  : No active profile set, falling back to default profiles: default
+2019-01-07 16:08:43.666  INFO 3556 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c6cb480: startup date [Mon Jan 07 16:08:43 IST 2019]; root of context hierarchy
+2019-01-07 16:08:54.170  INFO 3556 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-07 16:08:54.188  INFO 3556 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-07 16:08:54.599  INFO 3556 --- [main] com.hcl.msa.MSAAnalyser                  : Started MSAAnalyser in 18.059 seconds (JVM running for 19.609)
+2019-01-07 16:47:39.351  INFO 1612 --- [main] com.hcl.msa.MSAAnalyser                  : Starting MSAAnalyser on user1-PC with PID 1612 (Y:\Desktop\MSA\MSAAnalyser\target\classes started by user1 in Y:\Desktop\MSA\MSAAnalyser)
+2019-01-07 16:47:39.359 DEBUG 1612 --- [main] com.hcl.msa.MSAAnalyser                  : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-07 16:47:39.360  INFO 1612 --- [main] com.hcl.msa.MSAAnalyser                  : No active profile set, falling back to default profiles: default
+2019-01-07 16:47:40.373  INFO 1612 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c6cb480: startup date [Mon Jan 07 16:47:40 IST 2019]; root of context hierarchy
+2019-01-07 16:47:54.765  INFO 1612 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-07 16:47:54.781  INFO 1612 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-07 16:47:55.808  INFO 1612 --- [main] com.hcl.msa.MSAAnalyser                  : Started MSAAnalyser in 18.931 seconds (JVM running for 25.588)
