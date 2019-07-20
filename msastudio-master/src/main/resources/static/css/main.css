@@ -1,0 +1,24 @@
+h1{
+	color:#0000FF;
+}
+
+h2{
+	color:#FF0000;
+}
+
+.grid {
+  width: 100%;
+   height: auto;
+}
+
+
+html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+.ui-grid-header-cell .ui-grid-cell-contents {
+   height: 90px;
+   -ms-text-overflow: clip;
+   -o-text-overflow: clip;
+   text-overflow: clip;
+ }

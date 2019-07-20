@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<struts-config>
+    <form-beans>
+        <form-bean name="helloWorldForm" type="com.mkyong.common.form.HelloWorldForm"/>
+    </form-beans>
+    <action-mappings>
+        <action name="helloWorldForm" path="/helloWorld" type="com.mkyong.common.action.HelloWorldAction">
+            <forward name="success" path="/HelloWorld.jsp"/>
+        </action>
+    </action-mappings>
+</struts-config>
