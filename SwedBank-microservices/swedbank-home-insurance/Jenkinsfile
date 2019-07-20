@@ -1,0 +1,28 @@
+node {
+
+    stage( 'checkout' ) {
+    
+        echo 'This is the check-out stage'
+        git branch: 'SWEDBank', credentialsId: 'sharma_ga', url: 'https://repo.hclets.com/CA-COE/SwedBank-microservices.git'
+    }
+    
+    stage ( 'build' ) {
+    
+        echo 'This is the build stage'
+        sh label: '', script: 'mvn -f ./swedbank-home-insurance/pom.xml clean install'
+    }
+
+    stage ( 'Code Analysis ') {
+        echo 'Analysing code...'
+        sh returnStdout: true, script: '''cd swedbank-home-insurance
+        mvn -B -V -U -e sonar:sonar -Dsonar.host.url=\'http://almsmart.demos.hclets.com/sonar\''''        
+        
+    }
+
+    stage ( 'Build the docker image' ){
+        
+        echo "Building docker image .. "
+        sh returnStdout: true, script: '''cd swedbank-home-insurance
+        mvn docker:build '''
+    }
+}

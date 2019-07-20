@@ -1,0 +1,32 @@
+{
+	"personal-id": 1,
+	"name": "Arian F Abrahamsson",
+	"Owner addresses": [{
+		"id": 100,
+		"address": {
+			"line1": "Handslagarevägen",
+			"line2": "47",
+			"line3": "",
+			"city": "MALMÖ",
+			"country": "Sweden",
+			"code": "211 76"
+		},
+		"latitude": "55.635160",
+		"longitude": "13.481000",
+		"totalarea": "64"
+	}],
+	"Renter addresses": [{
+		"id": 200,
+		"address": {
+			"line1": "Östra Förstadsgatan",
+			"line2": "50",
+			"line3": "",
+			"city": "UPPSALA",
+			"country": "Sweden",
+			"code": "758 39"
+		},
+		"latitude": "55.606370",
+		"longitude": "13.021460",
+		"totalarea": "68"
+	}]
+}

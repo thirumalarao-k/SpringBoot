@@ -1,0 +1,642 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a Home Insurance API Specification",  
+    "version": "1.0.0",
+    "title": "SwedBank API",
+    "termsOfService": "http://localhost:8080/swedbanksvc/insurance/home/",
+    "contact": {
+      "email": "muthuswamyp@hcl.com"
+    },
+    "license": {
+      "name": "Home Insurance Application",
+      "url": "http://localhost:8080/swedbanksvc/insurance/home/"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Home Insurance",
+      "description": "Catalog of Home Insurance APIs",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://swagger.io"
+      }
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/swedbanksvc/insurance/home/getAllPlans": {
+      "get": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all available plans",
+        "description": "Description here",
+        "operationId": "getAllPlans",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/plan"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+    ,
+	"/swedbanksvc/insurance/home/getAllPersonalDetails": {
+      "get": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all the owner and renter addresses",
+        "description": "Description here",
+        "operationId": "getAllAddress",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/personaldetails"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+	"/swedbanksvc/insurance/home/searchByCategory": {
+			"get": {
+				"tags": ["Home Insurance"],
+				"summary": "Find property address by category",
+				"description": "",
+				"operationId": "getAddressByCategory",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "category",
+					"in": "path",
+					"description": "category of address(Owner/Renter) that needs to be fetched",
+					"required": true,
+					"type": "string"
+					}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/category"
+						}
+					},
+					"400": {
+						"description": "Invalid Category supplied"
+					}
+				}
+			}
+  },
+  "/swedbanksvc/insurance/home/calculatePremiumByPlan": {
+			"get": {
+				"tags": ["Home Insurance"],
+				"summary": "Find the monthly/yearly premium",
+				"description": "",
+				"operationId": "getPremiumByPlan",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "property-id",
+					"in": "path",
+					"description": "property-id of the address",
+					"required": true,
+					"type": "integer"
+					},
+					{
+					"name": "plan-type",
+					"in": "path",
+					"description": "property-id of the address",
+					"required": true,
+					"type": "string"
+					},
+					{
+					"name": "bedrooms",
+					"in": "path",
+					"description": "no of bed rooms",
+					"required": true,
+					"type": "integer"
+					},
+					{
+					"name": "livingrooms",
+					"in": "path",
+					"description": "no of living rooms",
+					"required": true,
+					"type": "integer"
+					},
+					{
+					"name": "bathrooms",
+					"in": "path",
+					"description": "no of bathrooms",
+					"required": true,
+					"type": "integer"
+					},
+					{
+					"name": "extraIds",
+					"in": "path",
+					"description": "array of extraIds",
+					"required": true,
+					"type": "array",
+						"items": {
+							"type": "integer"
+						}
+					}
+					],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/premium"
+						}
+					},
+					"400": {
+						"description": "Invalid data"
+					}
+				}
+			}
+  },
+   "/swedbanksvc/insurance/home/getPropertyByAddressId": {
+      "get": {
+		"parameters": [
+          {
+            "in": "path",
+            "name": "address-id",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all available Properties",
+        "description": "Description here",
+        "operationId": "getAllProperties",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/property"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+	"/swedbanksvc/insurance/home/getAllExtraItems": {
+      "get": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all available Extras",
+        "description": "All the meta data of extra items will be fetched",
+        "operationId": "getAllExtras",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/extra"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+	"/swedbanksvc/insurance/home/getAllPhotos": {
+      "get": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all available photos",
+        "description": "Description here",
+        "operationId": "getAllPhotos",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/photo"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },	
+	"/swedbanksvc/insurance/home/{propertyId}/{extraId}/uploadPhoto": {
+			"post": {
+				"tags": ["Home Insurance"],
+				"summary": "uploads a photo",
+				"description": "",
+				"operationId": "uploadPhoto",
+				"consumes": ["multipart/form-data"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "propertyId",
+					"in": "path",
+					"description": "Property Id to update",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				},
+				{
+					"name": "extraId",
+					"in": "path",
+					"description": "Extra Id of the property to update",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				},
+				{
+					"name": "additionalMetadata",
+					"in": "formData",
+					"description": "Additional data to pass to server",
+					"required": false,
+					"type": "string"
+				}, {
+					"name": "file",
+					"in": "formData",
+					"description": "file to upload",
+					"required": false,
+					"type": "file"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/uploadPhoto"
+						}
+					}
+				}
+			}
+		},
+	"/swedbanksvc/insurance/home/getAllPolicyDocs": {
+      "get": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Get all policy documents",
+        "description": "Description here",
+        "operationId": "getAllPolicyDocs",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/policyDocument"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+	"/swedbanksvc/insurance/home/signDocument": {
+      "post": {
+        "tags": [
+          "Home Insurance"
+        ],
+        "summary": "Sign the document",
+        "description": "Description here",
+        "operationId": "signDocument",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/signDocument"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "plan": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "package": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "personaldetails": {
+      "type": "object",
+      "properties": {
+        "personal-id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "name": {
+          "type": "string"
+        },
+        "Owner addresses": {
+          "type": "object",
+		  "properties": {
+				"id": {
+				  "type": "integer",
+				  "format": "int32"
+				},
+				"address": {
+				"type": "object",
+					"properties": {
+						"line 1": {
+						  "type": "string"
+						},
+						"line 2": {
+						  "type": "string"
+						},
+						"line 3": {
+						  "type": "string"
+						},						
+						"city": {
+						  "type": "string"
+						}
+					}
+		  
+				},
+				"latitude": {
+				  "type": "string"
+				},
+				"longitude": {
+				  "type": "string"
+				},
+				"totalarea": {
+				  "type": "string"
+				}
+			}
+		  
+        },
+	"Renter addresses": {
+          "type": "object",
+		  "properties": {
+				"id": {
+				  "type": "integer",
+				  "format": "int32"
+				},
+				"address": {
+				"type": "object",
+					"properties": {
+						"line 1": {
+						  "type": "string"
+						},
+						"line 2": {
+						  "type": "string"
+						},
+						"line 3": {
+						  "type": "string"
+						},						
+						"city": {
+						  "type": "string"
+						}
+					}
+		  
+				},
+				"latitude": {
+				  "type": "string"
+				},
+				"longitude": {
+				  "type": "string"
+				},
+				"totalarea": {
+				  "type": "string"
+				}
+			}
+		  
+        }
+      }
+    },
+	"category": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+		"addresses": {
+          "type": "object",
+		  "properties": {
+				"id": {
+				  "type": "integer",
+				  "format": "int32"
+				},
+				"address": {
+				"type": "object",
+					"properties": {
+						"line 1": {
+						  "type": "string"
+						},
+						"line 2": {
+						  "type": "string"
+						},
+						"line 3": {
+						  "type": "string"
+						},						
+						"city": {
+						  "type": "string"
+						},						
+						"country": {
+						  "type": "string"
+						},						
+						"code": {
+						  "type": "string"
+						}
+					}
+		  
+				},
+				"latitude": {
+				  "type": "string"
+				},
+				"longitude": {
+				  "type": "string"
+				},
+				"totalarea": {
+				  "type": "string"
+				}
+			}
+		  
+        }
+      }
+      },
+	"premium": {
+      "type": "object",
+      "properties": {
+        "monthly-premium": {
+          "type": "number"
+        },
+        "yearly-premium": {
+          "type": "number"
+        }
+      }
+    },
+	"property": {
+      "type": "object",
+      "properties": {
+		   "id": {
+			"type": "integer",
+			"format": "int32"
+			},
+			"address-id": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"currency": {
+				"type": "string"
+			},
+			"bedrooms": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"livingroom": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"bathroom": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"monthly-premium": {
+				"type": "number"
+			},
+			"yearly-premium": {
+				"type": "number"
+			}
+      }
+    },
+	"extra": {
+      "type": "object",
+		"properties": {
+			"extra-id": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"extra-name": {
+				"type": "string"
+			}
+		}
+    },
+	"photo": {
+      "type": "object",
+      "properties": {
+			"property-id": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"extra-id": {
+				"type": "integer",
+				"format": "int32"
+			},
+			"photo-name": {
+				"type": "string"
+			},
+			"photo-url": {
+				"type": "string"
+			}
+      }
+    },
+	"uploadPhoto": {
+			"type": "object",
+			"properties": {
+				"code": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"type": {
+					"type": "string"
+				},
+				"message": {
+					"type": "string"
+				}
+			}
+	},
+	"policyDocument": {
+      "type": "object",
+      "properties": {
+        "policy-id": {
+			"type": "integer",
+			"format": "int32"
+		},
+		"policy-name": {
+			"type": "string"
+		},
+		"policy-doc-url": {
+			"type": "string"
+		}
+      }
+    },
+	"signDocument": {
+      "type": "object",
+      "properties": {
+        "status": {
+		"type": "string"
+		}
+      }
+    }
+	
+  }
+}

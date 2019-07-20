@@ -1,0 +1,103 @@
+{
+	"propertydetails": [{
+			"id": 1,
+			"address-id": 100,
+			"currency": "EUR",
+			"bedrooms": 2,
+			"livingroom": 2,
+			"bathroom": 2,
+			"base-monthly-premium": 62.99,
+			"base-yearly-premium": 755.88
+		},
+		{
+			"id": 2,
+			"address-id": 101,
+			"currency": "EUR",
+			"bedrooms": 4,
+			"livingroom": 1,
+			"bathroom": 2,
+			"base-monthly-premium": 63.5,
+			"base-yearly-premium": 762
+		},
+		{
+			"id": 3,
+			"address-id": 102,
+			"currency": "EUR",
+			"bedrooms": 4,
+			"livingroom": 2,
+			"bathroom": 2,
+			"base-monthly-premium": 65.99,
+			"base-yearly-premium": 791.88
+		},
+		{
+			"id": 4,
+			"address-id": 103,
+			"currency": "EUR",
+			"bedrooms": 4,
+			"livingroom": 2,
+			"bathroom": 3,
+			"base-monthly-premium": 66.5,
+			"base-yearly-premium": 798
+		},
+		{
+			"id": 5,
+			"address-id": 104,
+			"currency": "EUR",
+			"bedrooms": 2,
+			"livingroom": 2,
+			"bathroom": 1,
+			"base-monthly-premium": 62.99,
+			"base-yearly-premium": 755.88
+		},
+		{
+			"id":6,
+			"address-id": 200,
+			"currency": "EUR",
+			"bedrooms": 3,
+			"livingroom": 2,
+			"bathroom": 2,
+			"base-monthly-premium": 63.99,
+			"base-yearly-premium": 767.88
+		},
+		{
+			"id": 7,
+			"address-id": 201,
+			"currency": "EUR",
+			"bedrooms": 5,
+			"livingroom": 1,
+			"bathroom": 3,
+			"base-monthly-premium": 65.5,
+			"base-yearly-premium": 786
+		},
+		{
+			"id": 8,
+			"address-id": 202,
+			"currency": "EUR",
+			"bedrooms": 6,
+			"livingroom": 3,
+			"bathroom": 4,
+			"base-monthly-premium": 68.5,
+			"base-yearly-premium": 822
+		},
+		{
+			"id": 9,
+			"address-id": 203,
+			"currency": "EUR",
+			"bedrooms": 4,
+			"livingroom": 2,
+			"bathroom": 4,
+			"base-monthly-premium": 67.99,
+			"base-yearly-premium": 815.88
+		},
+		{
+			"id": 10,
+			"address-id": 204,
+			"currency": "EUR",
+			"bedrooms": 4,
+			"livingroom": 1,
+			"bathroom": 3,
+			"base-monthly-premium": 63.99,
+			"base-yearly-premium": 767.88
+		}
+	]
+}

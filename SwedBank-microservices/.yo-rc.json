@@ -1,0 +1,26 @@
+{
+ 	"generator-spring-rest": {
+ 		"serviceName": "swedbank-home-insurance",
+ 		"groupId": "com.hcl.swedbank.adpaas.services",
+ 		"artifactId": "swedbank-home-insurance",
+ 		"packaging": "jar",
+ 		"springBootVersion": "1.5.3.RELEASE",
+ 		"basePackageStructure": "com.hcl.swedbank.homeinsurance",
+ 		"mavenProfiles": [
+ 			"dev",
+ 			"test",
+ 			"qa",
+ 			"prod"
+ 		],
+ 		"enableEureka": true,
+ 		"enableDropwizardMetrics": true,
+ 		"enableSpringSecurity": true,
+ 		"enableSpringCloudConfig": true,
+ 		"enableELK": true,
+ 		"deploymentOptions": [
+ 			"spring-boot",
+ 			"docker"
+ 		],
+ 		"applicationPort": "9095"
+ 	}
+ }

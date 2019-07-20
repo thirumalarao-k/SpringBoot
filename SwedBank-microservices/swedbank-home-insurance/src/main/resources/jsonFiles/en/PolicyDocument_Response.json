@@ -1,0 +1,13 @@
+{
+	"policydocs":
+		[{
+			"policy-id":1,
+			"policy-name":"Swedbank Policy",
+			"policy-doc-url":"https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Swedbank+Model+Policy.pdf"
+		},
+		{
+			"policy-id":2,
+			"policy-name":"HomeInsurance Summary",
+			"policy-doc-url":"https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Home+Insurance+Summary.pdf"
+		}]
+}

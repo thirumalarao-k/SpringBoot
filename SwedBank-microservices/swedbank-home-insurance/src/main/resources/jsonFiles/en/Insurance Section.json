@@ -1,0 +1,18 @@
+{
+	"plans": 
+			[{
+				"id": 1,
+				"package": "Basic",
+				"summary": "Provides compensation for damages caused to the building by natural calamities such as  torrential rain, earthquake, storm or hail."
+			},{
+				"id": 2,
+				"package": "Plus",
+				"summary": "Provides  basic coverage with extended travel protection inclusive of cancellation protection, delay protection, exemption from deductions and travel."
+			},
+			{
+				"id": 3,
+				"package": "Premium",
+				"summary": "Comprehensive plan covers all risks and replaces personal items damaged or lost due to a sudden/unforeseen event."
+			}
+			]
+}

@@ -1,0 +1,7 @@
+time="2019-06-28 06:55:33" level=info msg="Removing directory :: /opt/adc/pinster/workspace/workspace-muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e" token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:33" level=info msg="Workspace created successfully : /opt/adc/pinster/workspace/workspace-muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e" token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:33" level=info msg="workspace cleaned for token :muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e" token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:33" level=info msg="Executing Command : yo [spring-rest /opt/adc/pinster/workspace/workspace-muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e/swagger-model/swagger-model.json --force]  " token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:58" level=info msg="Workspace for token : muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e exists : /opt/adc/pinster/workspace/workspace-muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e " token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:58" level=info msg="Executing Command : git [init]  " token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e
+time="2019-06-28 06:55:58" level=info msg="Executing Command : git [add *]  " token=muthuswamypc0f82c7e-83f8-457a-aab5-126a551d093e

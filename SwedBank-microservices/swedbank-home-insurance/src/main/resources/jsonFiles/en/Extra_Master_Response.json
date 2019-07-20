@@ -1,0 +1,31 @@
+{
+	"extras": [{
+			"extra-id": 1,
+			"extra-name": "Art"
+		},
+		{
+			"extra-id": 2,
+			"extra-name": "Electronics"
+		},
+		{
+			"extra-id": 3,
+			"extra-name": "Exterior"
+		},
+		{
+			"extra-id": 4,
+			"extra-name": "Furniture"
+		},
+		{
+			"extra-id": 5,
+			"extra-name": "Garden"
+		},
+		{
+			"extra-id": 6,
+			"extra-name": "Jewellery"
+		},
+		{
+			"extra-id": 7,
+			"extra-name": "Transport"
+		}
+	]
+}

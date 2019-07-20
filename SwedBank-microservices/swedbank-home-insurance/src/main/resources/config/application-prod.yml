@@ -1,0 +1,60 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+# ===================================================================
+# Server
+# ===================================================================
+server:
+  port: 9097
+  context-path: /
+
+# ===================================================================
+# Logging
+# ===================================================================
+logging:
+  level:
+    root: warn
+    com.hcl.swedbank.homeinsurance: debug
+
+# ===================================================================
+# springfox
+# ===================================================================
+springfox:
+  documentation:
+    swagger:
+      v2.path: /api-docs
+
+spring:
+  jackson:
+    date-format: com.hcl.swedbank.homeinsurance.api.config.format.RFC3339DateFormat
+    serialization:
+      write-dates-as-timestamps: false
+  security:
+    enabled: false
+    
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        enabled: true
+        healthcheck:
+            enabled: true
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://admin:admin@localhost:8761/eureka/

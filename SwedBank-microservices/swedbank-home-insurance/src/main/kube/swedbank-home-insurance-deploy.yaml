@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+  namespace: default
+  labels:
+    environment : dev
+  name: swedbank-home-insurance
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        environment : dev
+    spec:
+      containers:
+      - image: dockerregistry.hclets.com/swedbankpoc/swedbank-home-insurance:latest
+        name: almsmart-ci
+        ports:
+        - containerPort: 9090
+        imagePullPolicy: Always
+        imagePullSecrets:
+          - name : regcred
+        resources: {}
+      restartPolicy: Always
+status: {}

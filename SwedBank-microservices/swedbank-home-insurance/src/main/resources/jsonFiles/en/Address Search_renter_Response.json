@@ -1,0 +1,70 @@
+{
+	"category": "Renter",
+	"name": "Arian F Abrahamsson",
+	"addresses": [{
+		"id": 200,
+		"address": {
+			"line1": "Östra Förstadsgatan",
+			"line2": "50",
+			"line3": "",
+			"city": "UPPSALA",
+			"country": "Sweden",
+			"code": "758 39"
+		},
+		"latitude": "55.606370",
+		"longitude": "13.021460",
+		"totalarea": "64"
+	}, {
+		"id": 201,
+		"address": {
+			"line1": "Sandviken",
+			"line2": "58",
+			"line3": "",
+			"city": "ÖREBRO",
+			"country": "Sweden",
+			"code": "703 42"
+		},
+		"latitude": "60.187590",
+		"longitude": "20.169770",
+		"totalarea": "75"
+	}, {
+		"id": 202,
+		"address": {
+			"line1": "Fornäng",
+			"line2": "88",
+			"line3": "",
+			"city": "LINKÖPING",
+			"country": "Sweden",
+			"code": "584 35"
+		},
+		"latitude": "13.529200",
+		"longitude": "100.629310",
+		"totalarea": "90"
+	}, {
+		"id": 203,
+		"address": {
+			"line1": "Luddingsbo Mekanikusv",
+			"line2": "98",
+			"line3": "",
+			"city": "STOCKHOLM",
+			"country": "Sweden",
+			"code": "104 08"
+		},
+		"latitude": "58.516670",
+		"longitude": "16.133330",
+		"totalarea": "88"
+	}, {
+		"id": 204,
+		"address": {
+			"line1": "Handslagarevägen",
+			"line2": "5",
+			"line3": "",
+			"city": "MALMÖ",
+			"country": "Sweden",
+			"code": "212 44"
+		},
+		"latitude": "55.635740",
+		"longitude": "13.479980",
+		"totalarea": "68"
+	}]
+}

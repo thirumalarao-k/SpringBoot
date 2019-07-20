@@ -1,0 +1,51 @@
+{
+	"photos": [{
+			"property-id": 1,
+			"extra-id": 7,
+			"photo-name": "Transport",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Boat+-+Transport.jpg"
+		},
+		{
+			"property-id": 1,
+			"extra-id": 2,
+			"photo-name": "Art",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Dining+%26+Art.jpg"
+		},
+		{
+			"property-id": 2,
+			"extra-id": 5,
+			"photo-name": "Garden",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Garden.jpg"
+		},
+		{
+			"property-id": 2,
+			"extra-id": 6,
+			"photo-name": "Jewellery",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Jewellery.jpg"
+		},
+		{
+			"property-id": 6,
+			"extra-id": 1,
+			"photo-name": "Modular Kitchen",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/Modular+Kitchen.jpg"
+		},
+		{
+			"property-id": 6,
+			"extra-id": 2,
+			"photo-name": "Television",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/TV.jpg"
+		},
+		{
+			"property-id": 7,
+			"extra-id": 1,
+			"photo-name": "Modern Home",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/modern+home+exterior.jpg"
+		},
+		{
+			"property-id": 7,
+			"extra-id": 2,
+			"photo-name": "Modular Kitchen",
+			"photo-url": "https://dna-swedbank-resources.s3.us-east-2.amazonaws.com/modular+Kitchen+1.jpg"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"plans": 
+			[{
+				"id": 1,
+				"package": "Bas",
+				"summary": "Ger kompensation för skador som orsakats byggnaden av natur katastrofer såsom skyfall, jord bävning, storm eller hagel."
+			},{
+				"id": 2,
+				"package": "Plus",
+				"summary": "Ger bas täckning med utökat rese skydd inklusive avbeställnings skydd, fördröjnings skydd, befrielse från avdrag och resor."
+			},
+			{
+				"id": 3,
+				"package": "Premium",
+				"summary": "Övergripande plan täcker alla risker och ersätter personliga föremål som skadats eller förlorats på grund av en plötslig/oförutsedd händelse."
+			}
+			]
+}
